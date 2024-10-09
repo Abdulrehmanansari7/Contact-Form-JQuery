@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container" id="container">
+    <form action="/myaction.php" name="myForm" onsubmit="return validateForm()" method="post">
+        <h2>CONTACT US</h2>
+        <br />
+        <div id="name">
+            <input class="type" type="text" name="fname" required placeholder="Name"><br>
+            <span class="formerror"></span>  
+        </div>
+        <br><br>
+        <div id="number">
+            <input class="type" type="number" name="fnumber" required placeholder="Number"><br>
+            <span class="formerror"></span>  
+        </div>
+        <br><br>
+        <div id="email">
+            <input class="type" type="email" name="femail" required placeholder="Email"><br>
+            <span class="formerror"></span>  
+        </div>
+        <br><br>
+        <div id="pass">
+            <input class="type" type="password" name="fpass" required placeholder="Password"><br>
+            <span class="formerror"></span>  
+        </div>
+        <br><br>
+        <div id="pass2">
+            <input class="type" type="password" name="fpass2" required placeholder="Confirm your Password"><br>
+            <span class="formerror"></span>  
+        </div>
+        <br><br>
+        <input class="Submit" type="submit" value="submit">
+        </form>
+    </div>
+   <script src="index.js"></script>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5+5hb7MF0x4Rh9G7E5Gz5hjpJ7VZoeyMl1n02x8W"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
